@@ -1,0 +1,52 @@
+.opacity-animation {
+    animation: opacity-spawn 1s forwards;
+}
+
+.slide-in-left-animation {
+    animation: slide-in-left-spawn 1s forwards;
+}
+
+.slide-in-right-animation {
+    animation: slide-in-right-spawn 1s forwards;
+}
+
+.slide-in-left-animation2 {
+    animation: slide-in-left-spawn 1s forwards;
+}
+
+.slide-in-right-animation2 {
+    animation: slide-in-right-spawn 1s forwards;
+}
+
+
+@keyframes opacity-spawn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left-spawn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-right-spawn {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+

@@ -1,0 +1,194 @@
+:root {
+    --darkest: rgba(23, 23, 23, 1);
+    --darker: #424242;
+    --dark: rgb(109, 109, 109);
+    --grey: #979797;
+    --semilight: #c2c2c2;
+    --light: #ececec;
+    --mecute: "me pic 1.jpg";
+    --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    --highlight1: rgb(184, 48, 48);
+    --highlight2: rgb(48, 112, 184);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+    margin-left: 10vmin;
+    width: 80vw;
+    height: 90vh;
+    color: var(--light);
+    justify-items: stretch;
+}
+
+body {
+    background-color: var(--darkest);
+    min-height: 100vh;
+    
+}
+
+@keyframes background-tile {
+    0% {
+        background-position: 0%, 0%;
+    }
+    100% {
+        background-position: 100%, 100%;
+    }
+}
+
+#name-input {
+    height: 3rem;
+    font-size: 1rem;
+    justify-items: stretch;
+
+    background-color: var(--darker);
+    border-radius: 10px;
+    color: var(--semilight);
+}
+
+#email-input {
+    height: 3rem;
+    font-size: 1rem;
+    margin-top: 2.5vh;
+    background-color: var(--darker);
+    border-radius: 10px;
+    color: var(--semilight);
+    transition: all 0.5s;
+    justify-items: center;
+}
+
+#email-input:hover {
+    resize: none;
+}
+
+#contact-message-input {
+    height: 12rem;
+    font-size: 1rem;
+    max-width: 80vh;
+    resize: none;
+    margin-top: 2.5vh;
+    background-color: var(--darker);
+    border-radius: 10px;
+    color: var(--semilight);
+    transition: all 0.5s;
+}
+
+#contact-message-input:hover {
+    font-size: 1.5rem;
+    resize: none;
+}
+
+#contact-button {
+    height: 5rem;
+    font-size: 3vmax;
+    width: 15vmax;
+    margin-top: 2.5vh;
+    resize: none;
+    background-color: var(--darker);
+    border-radius: 10px;
+    color: var(--semilight);
+    transition: all 0.5s;
+}
+
+#contact-button:hover {
+    font-size: 4rem;
+    resize: none;
+    background-color: var(--darker);
+    border-radius: 10px;
+    color: var(--semilight);
+}
+
+#ports-are-pretty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--darkest);
+    background-image: linear-gradient(
+            to top,
+            rgba(24, 24, 24, 1),
+            rgba(245, 246, 252, 0)
+        ),
+        url("background idea.png");
+    min-height: 100vh;
+    animation: background-tile 30s linear infinite;
+    font-weight: 900;
+}
+
+#ports-are-pretty h1 {
+    font-size: 5vmax;
+    color: var(--light);
+    font-weight: 900;
+
+}
+
+#ports-are-pretty p {
+    font-size: 2vmax;
+    color: var(--grey);
+    opacity: 0.2;
+    font-weight: 900;
+}
+
+#ports-are-pretty h1:nth-child(1) {
+    padding-left: 2vmax;
+    animation-duration: 1s;
+    
+}
+
+#ports-are-pretty h1:nth-child(2) {
+    padding-left: 4vmax;
+    width: 42vmax;
+    animation: typing 2s steps(17), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-weight: 400;
+    font-size: 5vmax;
+}
+
+@keyframes typing {
+    0% {
+        width: 0vmax;
+    }
+    50% {
+        width: 0vmax;
+    }
+    100% {
+        width: 37vmax;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#ports-are-pretty h1:nth-child(3) {
+    padding-left: 6vmax;
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
+#ports-are-pretty h1:nth-child(4) {
+    padding-left: 8vmax;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+}
+
+#ports-are-pretty p:nth-child(5) {
+    padding-left: 10vmax;
+    animation-delay: 4.5s;
+}

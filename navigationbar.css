@@ -1,0 +1,81 @@
+header {
+    position: fixed;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0));
+    z-index: 9999;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: var(--light);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    font-family: "Roboto Condensed", "Helvetica",sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10000;
+    font-weight: 500;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+nav a:hover {
+    color: var(--light);
+    font-weight: 900;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: var(--light);
+    position: absolute;
+    top: 0%;
+    transition: all 0.2s;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
