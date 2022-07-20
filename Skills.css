@@ -130,6 +130,7 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
+    
 }
 
 #blend-page img {
@@ -572,7 +573,7 @@ animation: react-rotate 8s linear infinite;
     display: flex;
     flex-direction: row;
     justify-content:center;
-    height: 100vh;
+    min-height: 100vh;
     align-items: stretch;
     flex-wrap: wrap;
     align-content: stretch;
