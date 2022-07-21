@@ -129,8 +129,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;
-    
+    flex-wrap: wrap-reverse;    
 }
 
 #blend-page img {
@@ -144,7 +143,6 @@
 #blend-page div {
 
 }
-
 
 #sharp-page {
     background-image:
@@ -298,14 +296,14 @@ animation: react-rotate 8s linear infinite;
     url("python screenshot.png");
     background-size: cover;
     background-position: 50%;
-    min-height: 100vh;
+    
     color: var(--light);
     width: 100%;
     font-weight: 100;
     text-align: center;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap-reverse;
 }
 
@@ -579,6 +577,7 @@ animation: react-rotate 8s linear infinite;
     align-content: stretch;
     font-weight: 100;
     width: 100%;
+    
 }
 
 #the-hook {
@@ -628,12 +627,14 @@ animation: react-rotate 8s linear infinite;
 
 .coding-text {
     align-self: center;
-    max-width: 70vw;
+    max-width: 100vmin;
     min-width: 50%;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
 }
 
 .coding-text h1 {
