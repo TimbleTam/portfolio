@@ -13,7 +13,7 @@
 
 .examples-container {
     background-color: var(--darkest);
-    height: 80vmin;
+    height: 70vmin;
     background-image:
     linear-gradient(to top, rgba(23, 23, 23, 1) 0%, rgba(66, 66, 66, 1) 100%);
 }
@@ -25,15 +25,16 @@
 }
 
 .card-area {
-    height: 60vmin;
+    height:70vmin;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: aqua;
 }
 
 .large-card-area {
-    height: 60vmin;
+    height: 65vmax;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -80,7 +81,7 @@
     align-self: center;
     max-width: 90vw;
     min-width: 30vw;
-    height: 33rem;
+    height: 33vmax;
     border-radius: 15px;
 
     transition: 0.5s all;
@@ -88,31 +89,30 @@
 
 .large-card:hover {
 
-    height: 38rem;
+    height: 38vmax;
 }
 
 .card:hover {
-    width: 25rem;
-    height: 38rem;
+    width: 25vmax;
+    height: 38vmax;
 }
 
 .card {
-    align-self: center;
-    width: 20rem;
-    height: 33rem;
+    align-self: flex-start;
+    width: 40vmin;
+    height: 65vmin;
     border-radius: 15px;
-    clip: rect(10px, 20px, 30px, 40px);
     transition: 0.5s all;
 }
 
 .card:hover {
-    width: 25rem;
-    height: 38rem;
+    width: 50vmin;
+    height: 75vmin;
 }
 
 .card img {
-    max-width: 20rem;
-    max-height: 33rem;
+    max-width: 20vmax;
+    max-height: 33vmax;
     border-radius: 15px;
     clip: rect(10px, 20px, 30px, 40px);
     top: 50%;
