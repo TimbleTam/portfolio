@@ -1,4 +1,4 @@
-header {
+.custom-header {
     position: fixed;
     width: 100%;
     background-image:
@@ -6,7 +6,7 @@ header {
     z-index: 9999;
 }
 
-header h2 {
+.custom-header h2 {
     font-size: 2rem;
     color: var(--light);
 }
@@ -25,7 +25,7 @@ html {
     font-weight: 500;
 }
 
-header::after {
+.custom-header::after {
     content: '';
     display: table;
     clear: both;

@@ -11,44 +11,36 @@
     --highlight2: rgb(48, 112, 184);
 }
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
-
-
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Helvetica 25 UltraLight', sans-serif;
+    font-weight: 10;
 }
 
 @keyframes iconslideshow2 {
     0% {
         opacity: 0;
-        
     }
     10% {
         opacity: 1;
-        
     }
     90% {
         opacity: 1;
-        
     }
     100% {
         opacity: 0;
-        
     }
 }
 
 .icon-pic-new {
-    
-   
     max-width: 50vmin;
     max-height: 50vmin;
     border-radius: 50px;
     animation: 2s ease-in-out iconslideshow2;
 }
-
 
 .page {
     background-color: var(--darkest);
@@ -57,12 +49,11 @@
     color: var(--light);
     width: 100%;
     font-weight: 100;
-    
 }
 
 #unity-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
     url("unity screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -85,16 +76,10 @@
     opacity: 0;
 }
 
-#unity-page div {
-
-}
-
 #more-page {
-    background-image:
-    linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)),
-    url("background idea.png");
+    background-color: 
+    rgba(23, 23, 23, 1);
     animation: background-tile 30s linear infinite;
-
     min-height: 100vh;
     color: var(--light);
     width: 100%;
@@ -107,17 +92,14 @@
 }
 
 .skill-image-container {
-
-
     height: 50vmin;
     width: 50vmin;
-    transform: translateY(-50%);
-
+    align-self: center;
 }
 
 #blend-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
     url("blender screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -133,20 +115,15 @@
 }
 
 #blend-page img {
-
     max-width: 50vmin;
     max-height: 50vmin;
     bottom: 50%;
     opacity: 0;
 }
 
-#blend-page div {
-
-}
-
 #sharp-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
     url("csharp screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -162,20 +139,15 @@
 }
 
 #sharp-page img {
-
     max-width: 50vmin;
     max-height: 50vmin;
     bottom: 50%;
     opacity: 0;
 }
 
-#sharp-page div {
-    
-}
-
 #html-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
     url("html screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -191,51 +163,41 @@
 }
 
 #html-page img:nth-child(1) {
-
     max-width: 25vmin;
-    
     top: 0%;
     left: 0%;
     position:fixed;
     border-radius: 10%;
     animation-delay: 0.25s;
-
     animation: rotate-around 8s infinite linear;
     -webkit-animation: rotate-around 8s infinite linear;
 }
 
 #html-page img:nth-child(2) {
-
     max-width: 25vmin;
-    
     top: 0%;
     left: 50%;
     position: fixed;
     animation: rotate-around 8s infinite linear;
     -webkit-animation: rotate-around 8s infinite linear;
-
 }
 
-
 #html-page img:nth-child(3) {
-
     max-width: 25vmin;
     max-height: 25vmin;
     top: 50%;
     left: 0%;
     position: fixed;
-    
     animation: rotate-around 8s infinite linear;
     -webkit-animation: rotate-around 8s infinite linear;
 }
-#html-page img:nth-child(4) {
 
+#html-page img:nth-child(4) {
     max-width: 25vmin;
     max-height: 25vmin;
     top: 50%;
     left: 50%;
     position: fixed;
-    
     animation: rotate-around 8s infinite linear;
     -webkit-animation: rotate-around 8s infinite linear;
 }
@@ -243,60 +205,36 @@
 @keyframes rotate-around {
     0%{
         transform: rotate(0deg);
-
     }
     100%{
         transform: rotate(-360deg);
-        
     }
 }
 
 .react-container {
-
 width: 50vmin;
 height: 50vmin;
-
 top: 50%;
 left: 50%;
-
-
 -webkit-animation: react-rotate 8s linear infinite;
 animation: react-rotate 8s linear infinite;
-
 }
-
-
-
-
 
 @keyframes react-rotate {
     0%{
         transform: rotate(0deg);
-
     }
     100%{
         transform: rotate(360deg);
-        
     }
 }
 
-
-
-#html-page div {
-       
-}
-
-
-
-
-
 #python-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
     url("python screenshot.png");
     background-size: cover;
     background-position: 50%;
-    
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -308,17 +246,11 @@ animation: react-rotate 8s linear infinite;
 }
 
 #python-page img {
-
     max-width: 50vmin;
     max-height: 50vmin;
     bottom: 50%;
     opacity: 0;
 }
-
-#python-page div {
-    
-}
-
 
 @keyframes intro_back {
     0%{
@@ -348,7 +280,6 @@ animation: react-rotate 8s linear infinite;
     }
 }
 
-
 #diagram {
     align-self: center;
     position: relative;
@@ -373,7 +304,6 @@ animation: react-rotate 8s linear infinite;
     bottom: 0;
     animation: diagram-bot-anim 0.5s;
     animation-delay: 1s;
-
     animation-fill-mode: forwards;
     z-index: 9999;
 }
@@ -387,12 +317,9 @@ animation: react-rotate 8s linear infinite;
     left: 0;
     animation: diagram-left-anim 0.5s;
     animation-delay: 1s;
-
     animation-fill-mode: forwards;
     z-index: 9999;
 }
-
-
 
 #diag-list {
     width: 100%;
@@ -411,8 +338,7 @@ animation: react-rotate 8s linear infinite;
     transform: rotate(180deg);
 }
 
-.skill-image {
-    
+.skill-image {    
     top: 0;
     width: 8vmin;
     height: 8vmin;
@@ -422,10 +348,7 @@ animation: react-rotate 8s linear infinite;
     animation-fill-mode: forwards;
     opacity: 0;
     transform: rotate(360deg);
-
-
 }
-
 
 @keyframes diagram-bar-rise {
     0%{
@@ -569,15 +492,13 @@ animation: react-rotate 8s linear infinite;
     url("background idea.png");
     animation: background-tile 30s linear infinite;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:center;
-    min-height: 100vh;
-    align-items: stretch;
+    height: 100rem;
+    align-items: center;
     flex-wrap: wrap;
-    align-content: stretch;
     font-weight: 100;
     width: 100%;
-    
 }
 
 #the-hook {
@@ -626,15 +547,11 @@ animation: react-rotate 8s linear infinite;
 }
 
 .coding-text {
-    align-self: center;
     max-width: 100vmin;
     min-width: 50%;
-    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-top: 40vh;
-    padding-bottom: 40vh;
+    justify-content: center;
 }
 
 .coding-text h1 {
@@ -643,17 +560,14 @@ animation: react-rotate 8s linear infinite;
 
 .coding-text h2 {
     opacity: 0.8;
-    margin-left: 5vw;
 }
 
 .coding-text h3 {
     opacity: 0.6;
-    margin-left: 10vw;
 }
 
 .coding-text p {
     opacity: 0.4;
-    margin-left: 15vw;
 }
 
 @keyframes iconslideshow {
@@ -669,8 +583,7 @@ animation: react-rotate 8s linear infinite;
     }
 }
 
-
-body {
+.main-body {
     margin: 0px;
 }
 
@@ -681,14 +594,11 @@ input, button {
     background: none;
 }
 
-
-
 @keyframes background-tile {
     0% {
         background-position: 0%, 0%;
     }
     100% { 
         background-position: 100%, 100%;
-        
     }
 }

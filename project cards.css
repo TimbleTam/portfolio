@@ -1,0 +1,243 @@
+:root {
+    --darkest: rgba(23, 23, 23, 1);
+    --darker: rgb(66, 66, 66);
+    --dark: rgb(109, 109, 109);
+    --grey: #979797;
+    --semilight: #c2c2c2;
+    --light: #ececec;
+    --mecute: "me pic 1.jpg";
+    --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    --highlight1: rgb(184, 48, 48);
+    --highlight2: rgb(48, 112, 184);
+}
+
+.examples-container {
+    background-color: var(--darkest);
+    height: 80vmin;
+    background-image:
+    linear-gradient(to top, rgba(23, 23, 23, 1) 0%, rgba(66, 66, 66, 1) 100%);
+}
+
+.examples-container h3 {
+    padding-left: 50px;
+    color: var(--light);
+    font-size: 5vmin;
+}
+
+.card-area {
+    height: 60vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.large-card-area {
+    height: 60vmin;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.large-card header {
+    height: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.large-card header h1 {
+    font-size: 3vmin;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: var(--light);
+}
+
+.large-card footer {
+    height: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.large-card footer h1 {
+    align-self: center;
+    border-color: var(--semilight);
+    color: var(--semilight);
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1vmin;
+    margin-left: 5px;
+}
+
+.large-card {
+    align-self: center;
+    max-width: 90vw;
+    min-width: 30vw;
+    height: 33rem;
+    border-radius: 15px;
+
+    transition: 0.5s all;
+}
+
+.large-card:hover {
+
+    height: 38rem;
+}
+
+.card:hover {
+    width: 25rem;
+    height: 38rem;
+}
+
+.card {
+    align-self: center;
+    width: 20rem;
+    height: 33rem;
+    border-radius: 15px;
+    clip: rect(10px, 20px, 30px, 40px);
+    transition: 0.5s all;
+}
+
+.card:hover {
+    width: 25rem;
+    height: 38rem;
+}
+
+.card img {
+    max-width: 20rem;
+    max-height: 33rem;
+    border-radius: 15px;
+    clip: rect(10px, 20px, 30px, 40px);
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.card header {
+    height: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card header h1 {
+    font-size: 3vmin;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: var(--light);
+}
+
+.card-body {
+    height: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--light);
+}
+
+.card-button-area {
+    height: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.card-button-area a {
+    color: var(--light);
+    text-decoration: none;
+    background-color:var(--highlight2);
+    border-radius: 10px;
+    font-size: 2vmin;
+    text-align: center;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.card-button-area :nth-child(2) {
+    color: var(--light);
+    text-decoration: none;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 2vmin;
+    text-align: center;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.card-button-area a:hover {
+    background-color:var(--highlight1);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+}
+
+
+.card footer {
+    height: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card footer h1 {
+    align-self: center;
+    border-color: var(--semilight);
+    color: var(--semilight);
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1vmin;
+    margin-left: 5px;
+}
+
+#resturant-helper-card {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      /* bottom, image */
+      url("resturant helper.png");
+    background-size: cover;
+}
+
+#flask-app-card {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      /* bottom, image */
+      url("flask web app.png");
+    background-size:cover;
+}
+
+#portfolio-card {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.7)
+      ),
+      /* bottom, image */
+      url("portfolio.png");
+    background-size: cover;
+}
