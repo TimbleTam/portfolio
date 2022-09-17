@@ -1,13 +1,14 @@
 :root {
     --darkest: rgba(23, 23, 23, 1);
     --darker: #424242;
+    --background: rgba(23, 23, 23, 1);
     --dark: rgb(109, 109, 109);
     --grey: #979797;
     --semilight: #c2c2c2;
     --light: #ececec;
     --mecute: "me pic 1.jpg";
     --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    --highlight1: rgb(184, 48, 48);
+    --highlight1: rgb(231, 23, 30);
     --highlight2: rgb(48, 112, 184);
 }
 
@@ -20,36 +21,54 @@
 }
 
 .page {
-    background-color: var(--darkest);
-    background-image: url("background idea.png");
+    background-color: var(--background);
+    
     min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
+    overflow-x:visible;
 }
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    background-color: var(--background);
+    color: rgba(0, 0, 0, 0);
+    }
+    
+::-webkit-scrollbar-thumb {
+    background: var(--dark);
+    border-radius: 10px;
+    width: 5px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 50px;
+}
+    
 
 @keyframes intro_back {
     0%{
         background-position: 50% 50%;
     }
-    20%{
+    30%{
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
         url("me pic 1.jpg");
-    }
-    40%{
-        background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 2.jpg");
     }
     50% {    
         background-position: 0% 0%;
     }
     60%{
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 3.jpg");
+        url("me pic 2.jpg");
     }
-    80%{
+    90%{
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 4.jpg");
+        url("me pic 3.jpg");
     }
     100%{
         background-position: 50% 50%;
@@ -65,57 +84,59 @@
     flex-direction: row;
     justify-content: left;
     animation: 30s  intro_back infinite;
-    width: 100vw;
+    width: 100%;
 }
 
 #short-about {
-    background-image:
-    linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)),
-    url("background idea.png");
-    animation: background-tile 30s linear infinite;
+    background-color: var(--background);
+
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    height: 100%;
-    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
     flex-wrap: wrap;
-    align-content: stretch;
+    
     font-weight: 100;
-    width: 100vw;
+    width: 100%;
 }
 
 #short-about2 {
-    background-image:
-    url("background idea.png");
-    animation: background-tile 30s linear infinite;
+    background-color: var(--background);
+
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-evenly;
-    height: 100%;
-    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
     flex-wrap: wrap;
-    align-content: stretch;
+    
     font-weight: 100;
-    width: 100vw;
+    width: 100%;
 }
 
 .coding-text {
-    align-self: center;
+    
     max-width: 100vmin;
     min-width: 50%;
-    height: 50%;
+    
     display: flex;
+    font-weight: 100;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 .coding-text h1 {
     opacity: 1;
     text-align: center;
+    font-size: 5vmin;
+    font-weight: 600;
+    font-variant-caps: all-petite-caps;
 }
 
 .coding-text h2 {
     opacity: 0.8;
     text-align: center;
+    font-weight: 100;
 }
 
 .coding-text h3 {
@@ -243,10 +264,12 @@
 
 .map {
     background-image: url("UKSilhouette.png");
+    
     width: 50vmin;
     height: 50vmin;
     background-size: cover;
     align-self: center;
+    
 
 }
 
@@ -261,6 +284,7 @@
     height: 8px;
 
     animation-delay: 1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     
 }
 
@@ -363,8 +387,9 @@ body {
 
 #morph-text {
     width: auto;
-    height: 2vw;
+
     padding-left: 1vw;
+
     filter: url(#threshold) blur(0.6px);
     animation-delay: 3.2s;
     color: var(--light);
@@ -379,6 +404,7 @@ body {
     font-size: 5vmax;
     text-align: left;
     font-weight: 900;
+
 }
 
 #morph-text:hover {
@@ -400,7 +426,7 @@ input, button {
 
 #contact-me:hover {
     color: var(--highlight1);
-    font-weight: 900;
+
 }
 
 @keyframes background-tile {

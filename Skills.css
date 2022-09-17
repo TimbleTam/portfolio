@@ -1,5 +1,6 @@
 :root {
     --darkest: rgba(23, 23, 23, 1);
+    --background: rgba(23, 23, 23, 1);
     --darker: #424242;
     --dark: rgb(109, 109, 109);
     --grey: #979797;
@@ -7,7 +8,7 @@
     --light: #ececec;
     --mecute: "me pic 1.jpg";
     --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    --highlight1: rgb(184, 48, 48);
+    --highlight1: rgb(231, 23, 30);
     --highlight2: rgb(48, 112, 184);
 }
 
@@ -35,6 +36,17 @@
     }
 }
 
+#contact-button {
+    background-color: #979797;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+#contact-me:hover {
+    color: var(--highlight1);
+
+}
+
 .icon-pic-new {
     max-width: 50vmin;
     max-height: 50vmin;
@@ -43,7 +55,7 @@
 }
 
 .page {
-    background-color: var(--darkest);
+    background-color: var(--background);
     background-image: url("background idea.png");
     min-height: 100vh;
     color: var(--light);
@@ -51,9 +63,24 @@
     font-weight: 100;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    background-color: var(--background);
+    color: rgba(0, 0, 0, 0);
+    }
+    
+::-webkit-scrollbar-thumb {
+        background: var(--dark);
+        border-radius: 10px;
+        width: 50px;
+    
+    }
+
 #unity-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
     url("unity screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -99,7 +126,7 @@
 
 #blend-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
     url("blender screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -123,7 +150,7 @@
 
 #sharp-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
     url("csharp screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -147,7 +174,7 @@
 
 #html-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
     url("html screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -231,7 +258,7 @@ animation: react-rotate 8s linear infinite;
 
 #python-page {
     background-image:
-    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(66, 66, 66, 1) 100%),
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
     url("python screenshot.png");
     background-size: cover;
     background-position: 50%;
@@ -243,6 +270,7 @@ animation: react-rotate 8s linear infinite;
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap-reverse;
+    
 }
 
 #python-page img {
@@ -478,6 +506,7 @@ animation: react-rotate 8s linear infinite;
 
 #the-hook h1 {
     font-size: 10vmin;
+    
 }
 
 #the-hook h2 {
@@ -494,11 +523,17 @@ animation: react-rotate 8s linear infinite;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    height: 100vh;
+    
     align-items: center;
     flex-wrap: wrap;
     font-weight: 100;
     width: 100%;
+    height: 100vh;
+}
+
+.intro-center {
+    
+    height: 100vh;
 }
 
 #the-hook {
@@ -555,11 +590,15 @@ animation: react-rotate 8s linear infinite;
 }
 
 .coding-text h1 {
-    opacity: 1;    
+    opacity: 1;
+    font-weight: 600;    
+    font-size: 5vmin;
+    font-variant-caps: all-petite-caps;
+
 }
 
 .coding-text h2 {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .coding-text h3 {
