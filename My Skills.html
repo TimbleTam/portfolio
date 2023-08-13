@@ -21,7 +21,12 @@
 <header class="custom-header">
     <div class="container">
         <h2 class="logo" href="index.html"> LIAM FORTUNE</h2>
-        <nav>
+        <div class="burger-toggle" onclick="togglenav();">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        <nav class="toggle-nav">
             <ul>
                 <li><a href="index.html">About </a></li>
                 <li><a href="Contact Me.html" id="contact-me">Contact Me </a></li>
@@ -408,6 +413,10 @@
 
     <script src="Skills.js" async></script>
     <script src="animationcontrol.js" async></script>
+    <script>function togglenav() {
+        document.getElementsByClassName("burger-toggle")[0].classList.toggle("active");
+        document.getElementsByClassName("toggle-nav")[0].classList.toggle("active");
+    }</script>
 
 
 

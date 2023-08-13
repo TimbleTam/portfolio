@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="contact page.css" />
     <link rel="stylesheet" href="navigationbar.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   </head>
-<header>
+<header class="custom-header">
   <div class="container">
 
     <h2 class="logo"> LIAM FORTUNE</h2>
-
-    <nav>
+    <div class="burger-toggle" onclick="togglenav();">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="toggle-nav">
       <ul>
         <li><a href="index.html">About </a></li>
         <li><a href="My Skills.html">Skills </a></li>
@@ -45,11 +50,15 @@
 
     </div>
 
-  
+
 
   </main>
   <script src="contactmepage.js" async></script>
   <script src="animationcontrol.js" async></script>
+  <script>function togglenav() {
+    document.getElementsByClassName("burger-toggle")[0].classList.toggle("active");
+    document.getElementsByClassName("toggle-nav")[0].classList.toggle("active");
+}</script>
 </body>
 
 </html>

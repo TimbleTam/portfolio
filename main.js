@@ -31,26 +31,24 @@ const elts = {
 
 const texts = [
     "Games",
-
     "Stories",
     "Models",
-
     "Scripts",
+    "Vue Apps",
+    "React Apps",
     "Code",
     "UX",
     "Data Structures",
     "Algo",
-
+    "Magic Happen",
+    "Deadlines",
     "People Happy",
 ];
 
 const mobile_animated = document.getElementById("morph-text-mobile");
 const back_animated = document.getElementById("introduction");
 
-function togglenav() {
-    document.getElementsByClassName("burger-toggle")[0].classList.toggle("active");
-    document.getElementsByClassName("toggle-nav")[0].classList.toggle("active");
-}
+
 
 
 mobile_animated.addEventListener("animationend", () => {
