@@ -35,7 +35,7 @@
 body {
     background-color: var(--darkest);
     min-height: 100vh;
-    
+
 }
 
 @keyframes background-tile {
@@ -114,7 +114,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: var(--darkest);
     background-image: linear-gradient(
             to top,
@@ -125,6 +125,8 @@ body {
     min-height: 100vh;
     animation: background-tile 30s linear infinite;
     font-weight: 900;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #ports-are-pretty h1 {
@@ -144,7 +146,7 @@ body {
 #ports-are-pretty h1:nth-child(1) {
     padding-left: 2vmax;
     animation-duration: 1s;
-    
+
 }
 
 #ports-are-pretty h1:nth-child(2) {

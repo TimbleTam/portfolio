@@ -1,9 +1,102 @@
 .custom-header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background-image:
     linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0));
     z-index: 9999;
+}
+
+.burger-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .custom-header {
+        background-color: var(--darker);
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .custom-header .container {
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .toggle-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        translate: -50% 0%;
+        top: 100%;
+        background-color: var(--darker);
+        width: 100vw;
+
+        overflow: hidden;
+        max-height: 0px;
+        transition: all 0.2s;
+    }
+
+    .toggle-nav ul li {
+        width: 100%;
+        padding: 10px;
+        margin-left: 0px;
+
+
+    }
+
+    .toggle-nav.active {
+
+        max-height: 200px;
+    }
+
+    .burger-toggle {
+        display: block;
+        height: 2rem;
+        aspect-ratio: 1/1;
+        border-radius: 5px;
+
+        align-self: center;
+        position: relative;
+    }
+    .burger-toggle div {
+        height: 10%;
+        width: 90%;
+        position: absolute;
+        background-color: white;
+        border-radius: 2px;
+        translate: -50% -50%;
+        left: 50%;
+        transition: all 0.2s;
+    }
+
+
+    .burger-toggle div:nth-child(1) {
+        top: 25%;
+    }
+    .burger-toggle div:nth-child(2) {
+        top: 50%;
+    }
+    .burger-toggle div:nth-child(3) {
+        top: 75%;
+    }
+
+    .burger-toggle.active div {
+        top: 50% !important;
+    }
+
+    .burger-toggle.active div:nth-child(1) {
+        rotate: 45deg;
+    }
+    .burger-toggle.active div:nth-child(2) {
+        opacity: 0;
+    }
+    .burger-toggle.active div:nth-child(3) {
+        rotate: -45deg;
+    }
 }
 
 .custom-header h2 {
