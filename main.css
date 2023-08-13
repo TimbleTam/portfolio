@@ -22,12 +22,14 @@
 
 .page {
     background-color: var(--background);
-    
+
     min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
     overflow-x:visible;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
@@ -38,18 +40,18 @@
     background-color: var(--background);
     color: rgba(0, 0, 0, 0);
     }
-    
+
 ::-webkit-scrollbar-thumb {
     background: var(--dark);
     border-radius: 10px;
     width: 5px;
-    
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
     width: 50px;
 }
-    
+
 
 @keyframes intro_back {
     0%{
@@ -59,7 +61,7 @@
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
         url("me pic 1.jpg");
     }
-    50% {    
+    50% {
         background-position: 0% 0%;
     }
     60%{
@@ -96,7 +98,7 @@
     height: 100vh;
     align-items: center;
     flex-wrap: wrap;
-    
+
     font-weight: 100;
     width: 100%;
 }
@@ -110,21 +112,63 @@
     height: 100vh;
     align-items: center;
     flex-wrap: wrap;
-    
+
     font-weight: 100;
     width: 100%;
 }
 
 .coding-text {
-    
+
     max-width: 100vmin;
     min-width: 50%;
-    
+
     display: flex;
     font-weight: 100;
     flex-direction: column;
     justify-content: center;
 }
+
+.coding-text,.new {
+
+    width: 50%;
+
+    display: flex;
+    font-weight: 100;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50vmin;
+}
+
+@media only screen and (max-width: 850px) {
+    .coding-text,.new {
+
+        width: 100%;
+
+        display: flex;
+        font-weight: 100;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vmin;
+    }
+
+    .map {
+        background-image: url("UKSilhouette.png");
+
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-size: cover;
+        align-self: center;
+        margin: 100px;
+        min-width: 250px;
+    }
+
+    #short-about {
+        min-height: max-content;
+        height: max-content;
+
+    }
+}
+
 .coding-text h1 {
     opacity: 1;
     text-align: center;
@@ -192,7 +236,7 @@
     font-size: 5vmax;
     padding-left: 1vw;
     transition: color 0.5s;
-    overflow-wrap: unset;    
+    overflow-wrap: unset;
 }
 
 #introduction h1:hover {
@@ -264,12 +308,12 @@
 
 .map {
     background-image: url("UKSilhouette.png");
-    
-    width: 50vmin;
-    height: 50vmin;
+
+    width: 50%;
+    aspect-ratio: 1/1;
     background-size: cover;
     align-self: center;
-    
+    max-width: 50vmin;
 
 }
 
@@ -280,12 +324,12 @@
     border-radius: 50%;
     border: 8px solid var(--highlight1);
     width: 8px;
-    
+
     height: 8px;
 
     animation-delay: 1s;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    
+
 }
 
 .map-animation {
@@ -433,8 +477,8 @@ input, button {
     0% {
         background-position: 0%, 0%;
     }
-    100% { 
+    100% {
         background-position: 100%, 100%;
-        
+
     }
 }
