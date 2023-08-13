@@ -10,7 +10,7 @@ function transition_icons()
     let choice = indox[Math.round(Math.random() * (indox.length - 1))];
 
     software_icon_home.removeChild(software_icon_home.firstChild);
-    
+
     const new_pic = document.createElement('img');
     new_pic.src = choice + ".png";
     new_pic.classList.add("icon-pic-new");
