@@ -23,6 +23,7 @@ html {
     justify-content: space-around;
     z-index: 10000;
     font-weight: 500;
+    position: relative;
 }
 
 .custom-header::after {

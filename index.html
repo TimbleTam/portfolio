@@ -19,7 +19,12 @@
 <header class="custom-header">
   <div class="container">
     <h2 class="logo" href="index.html"> LIAM FORTUNE</h2>
-    <nav>
+    <div class="burger-toggle" onclick="togglenav();">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="toggle-nav">
       <ul>
         <li><a href="My Skills.html">Skills </a></li>
         <li><a href="Contact Me.html" id="contact-me">Contact Me </a></li>
@@ -30,7 +35,10 @@
 
 <body>
   <main>
-    <div class="page" id="introduction">
+    <div class="page" id="introduction" style="animation-name: BackAnim;">
+
+    </div>
+    <div class="page" id="introduction-div">
       <div id="hello">
         <h1 class="animate__animated animate__backInLeft">Hello!</h1>
         <li>
@@ -38,25 +46,34 @@
           <h2 class="animate__animated animate__backInLeft">Names </h2>
           <h2 class="animate__animated animate__backInLeft"> Liam</h2>
         </li>
-        <ul id="second-line">
+        <ul id="second-line" class="secondlinedesktop">
           <h3 class="animate__animated animate__backInLeft">I</h3>
           <h3 class="animate__animated animate__backInLeft">Make </h3>
+
           <div id="morph-text" class="animate__animated animate__fadeInUp">
             <span id="text1"></span>
             <span id="text2"></span>
           </div>
 
+
           <svg id="filters">
             <defs>
               <filter id="threshold">
                 <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-                        0 1 0 0 0
-                        0 0 1 0 0
-                        0 0 0 255 -140" />
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
               </filter>
             </defs>
           </svg>
         </ul>
+        <div id="second-line" class="secondlinemobile">
+          <h3 class="animate__animated animate__backInLeft">I</h3>
+          <h3 class="animate__animated animate__backInLeft">Make </h3>
+          <h3 id="morph-text-mobile" style="animation-name: MobileMorphAnim;"
+            class="animate__animated animate__fadeInUp">Code</h3>
+        </div>
+
       </div>
     </div>
 
@@ -65,78 +82,76 @@
         <h1 class="page-h1-title">About me:</h1>
         <br />
         <h2 class="page-h1-body">I’m a self-taught, fast learning Full Stack Software Developer/Engineer from the UK
+          (Northamptonshire)
           looking to push my code to more people and bring more positive influence to the software industry.</h2>
         <br />
         <h2 class="page-h1-body">Currently working in the e-Learning Business, I have quickly risen and went from Junior
           developer to a project lead position, managing high value, large scale projects. Building industry first Front
           End content and Leading Back End Infrastructure.</h2>
+        <br />
+        <h2 class="page-h1-body">To me code has always been a tool we can use to better the lives of ourselves and other
+          people. My goal in software is to achieve that to the best of my ability, using hard work and thoughtful
+          action, bringing a positive change to as many people as I can with the projects I work on, whilst doing
+          everything I can to make every line better, faster and more efficient than the last.</h2>
       </div>
       <div class="map">
         <div class="pin2"></div>
       </div>
     </div>
 
-    <div class="page" id="short-about2" style="height: fit-content; min-height: auto; justify-content: flex-end;">
 
-      <div class="coding-text" style="width: 100%; max-width:100%">
-        <h1 class="page-h1-title" style="text-align: start;">A Short History:</h1>
-        <br />
-      </div>
-    </div>
 
-    <div class="page" id="short-about2" style="height: fit-content; min-height: auto; justify-content: flex-end; max-width: 100%;">
-      <div class="coding-text" style="width: 100%; max-width: 100%;">
-
-        <br />
-        <h2 class="page-h1-body" style="text-align:start;">I’m a self-taught, fast learning Full Stack Software
-          Developer/Engineer from the UK looking to push my code to more people and bring more positive influence to the
-          software industry.</h2>
-        <br />
-        <h2 class="page-h1-body" style="text-align:start;">Currently working in the e-Learning Business, I have quickly
-          risen and went from Junior developer to a project lead position, managing high value, large scale projects.
-          Building industry first Front End content and Leading Back End Infrastructure.</h2>
-        <br />
-      </div>
-    </div>
 
     <div class="page" id="short-about2">
-      <div class="coding-text">
-        <h1>A Natural Problem Solver.</h1>
-        <br />
-        <h2>To me, code has always been 20% bringing an action to fruition and 80% finding how to best make it work.
-        </h2>
-        <br />
-        <h2>I have always planned out my code before writing to ensure it works to the best of its ability. Hitting all
-          marks it needs to and making it lightweight and practical for other uses later down the road. I hope to bring
-          this philosophy with me into a career, where I can make meaningful additions to a codebase that positively
-          affect the team and project more as time goes on.</h2>
-
-      </div>
-
-    </div>
-
-    <div class="page" id="short-about">
-      <div class="coding-text">
+      <div class="coding-text new">
         <h2>With a Long history in making games, my skill set involves multiple disciplines.</h2>
         <br />
         <h2>With experience in 3D Modelling and Animation, I am able to rapidly and independently create clean assets
           and prototypes.</h2>
         <br />
-        <h2>With my countless hours of debugging, I am able to rapidly isolate and correct any problems that come up in
+        <h2>With my countless hours of debugging, I am able to rapidly isolate and correct any problems that come up
+          in
           code and find better ways to optimise the classes of most resistance.</h2>
         <br />
-        <h2>With my time and practice working in Game Design, Level Design and User Interface Design, I am very capable
+        <h2>With my time and practice working in Game Design, Level Design and User Interface Design, I am very
+          capable
           of planning out and creating prototypes and front-end software with a user-first approach and creating
           lightweight, powerful and functional code for the back-end and function of the current project.</h2>
         <br />
-        <h2>Working independently on large projects has also taught me how to plan development and organise an efficient
+        <h2>Working independently on large projects has also taught me how to plan development and organise an
+          efficient
           workflow to see me through to the next milestone. With these skills under my belt, I believe I would make a
           valuable member of any team.</h2>
       </div>
-
       <div class="icons-home" id="icons-home">
       </div>
     </div>
+
+    <!-- <div class="page" id="short-about">
+        <div class="coding-text">
+          <h2>With a Long history in making games, my skill set involves multiple disciplines.</h2>
+          <br />
+          <h2>With experience in 3D Modelling and Animation, I am able to rapidly and independently create clean assets
+            and prototypes.</h2>
+          <br />
+          <h2>With my countless hours of debugging, I am able to rapidly isolate and correct any problems that come up
+            in
+            code and find better ways to optimise the classes of most resistance.</h2>
+          <br />
+          <h2>With my time and practice working in Game Design, Level Design and User Interface Design, I am very
+            capable
+            of planning out and creating prototypes and front-end software with a user-first approach and creating
+            lightweight, powerful and functional code for the back-end and function of the current project.</h2>
+          <br />
+          <h2>Working independently on large projects has also taught me how to plan development and organise an
+            efficient
+            workflow to see me through to the next milestone. With these skills under my belt, I believe I would make a
+            valuable member of any team.</h2>
+        </div>
+
+        <div class="icons-home" id="icons-home">
+        </div>
+      </div> -->
   </main>
   <script src="main.js" async></script>
 </body>

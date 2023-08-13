@@ -70,12 +70,12 @@
     background-color: var(--background);
     color: rgba(0, 0, 0, 0);
     }
-    
+
 ::-webkit-scrollbar-thumb {
         background: var(--dark);
         border-radius: 10px;
         width: 50px;
-    
+
     }
 
 #unity-page {
@@ -95,16 +95,63 @@
     flex-wrap: wrap-reverse;
 }
 
-#unity-page img {
-    border-radius: 100%;
-    max-width: 50vmin;
-    max-height: 50vmin;
-    bottom: 50%;
-    opacity: 0;
+
+
+#vue-page {
+
+    background-image:
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    url("https://vueschool.io/storage/media/c79100806b1bcc517afb50e981d605ed/vue-js-3-fundamentals-with-the-composition-api.jpg");
+    min-height: 100vh;
+    color: var(--light);
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    background-size: cover;
+    background-position: center;
+}
+
+#vb-page {
+
+    background-image:
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    url("https://learn.microsoft.com/en-us/visualstudio/get-started/visual-basic/media/vs-2019/vb-code-window-whatisyourname-dark.png?view=vs-2022");
+    min-height: 100vh;
+    color: var(--light);
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    background-size: cover;
+    background-position: center;
+}
+
+#react-page {
+    background-image:
+    linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
+    url("https://miro.medium.com/v2/resize:fit:1400/0*MZN4EDkeFMLexrLq");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: var(--light);
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
 
 #more-page {
-    background-color: 
+    background-color:
     rgba(23, 23, 23, 1);
     animation: background-tile 30s linear infinite;
     min-height: 100vh;
@@ -124,6 +171,11 @@
     align-self: center;
 }
 
+.skill-image-container img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 #blend-page {
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
@@ -138,15 +190,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;    
+    flex-wrap: wrap-reverse;
 }
 
-#blend-page img {
-    max-width: 50vmin;
-    max-height: 50vmin;
-    bottom: 50%;
-    opacity: 0;
-}
+
 
 #sharp-page {
     background-image:
@@ -165,12 +212,7 @@
     flex-wrap: wrap-reverse;
 }
 
-#sharp-page img {
-    max-width: 50vmin;
-    max-height: 50vmin;
-    bottom: 50%;
-    opacity: 0;
-}
+
 
 #html-page {
     background-image:
@@ -270,15 +312,10 @@ animation: react-rotate 8s linear infinite;
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    
+
 }
 
-#python-page img {
-    max-width: 50vmin;
-    max-height: 50vmin;
-    bottom: 50%;
-    opacity: 0;
-}
+
 
 @keyframes intro_back {
     0%{
@@ -292,7 +329,7 @@ animation: react-rotate 8s linear infinite;
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
         url("me pic 2.jpg");
     }
-    50% {    
+    50% {
         background-position: 0% 0%;
     }
     60%{
@@ -320,7 +357,7 @@ animation: react-rotate 8s linear infinite;
     width: 100%;
     left: 0;
     top: 0;
-    position: absolute;     
+    position: absolute;
     z-index: 1;
 }
 
@@ -354,7 +391,7 @@ animation: react-rotate 8s linear infinite;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: stretch;
     bottom: 0;
 }
@@ -362,49 +399,58 @@ animation: react-rotate 8s linear infinite;
 .diag-item {
     height: 100%;
     bottom: 0;
+    width: 100%;
     position: relative;
     transform: rotate(180deg);
+
 }
 
-.skill-image {    
-    top: 0;
-    width: 8vmin;
-    height: 8vmin;
-    position:relative;
-    border-radius: 10px;
-    animation: iconslideshow 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    transform: rotate(360deg);
+.coding-text h1 {
+    font-size: 3rem !important;
+}
+
+.skill-image {
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+
+    position:absolute;
+
+    translate: -50% 110%;
+    rotate: 180deg;
 }
 
 @keyframes diagram-bar-rise {
     0%{
         height: 0%;
         opacity: 0;
-        width: 8vmin;
+
     }
     75%{
         height: 100%;
-        width: 4vmin;
+
     }
     90%{
         height: 100%;
-        width: 4vmin;
+
     }
     100%{
         opacity: 1;
-        width: 8vmin;
+
     }
 }
 
 .diag-bar{
     background-image:
     linear-gradient(to top, var(--light), var(--darker));
-    width: 8vmin;
+    width: 90%;
     animation: diagram-bar-rise  0.5s;
     animation-fill-mode: forwards;
     opacity: 0;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 .diag-bar:hover{
@@ -412,54 +458,43 @@ animation: react-rotate 8s linear infinite;
     linear-gradient(to top, var(--highlight1), var(--darker));
 }
 
-#diag-list .skill-image:nth-child(1)
-{
-    animation-delay: 2.5s;
-}
-#diag-list .skill-image:nth-child(2)
-{
-    animation-delay: 2.6s;
-}
-#diag-list .skill-image:nth-child(3)
-{
-    animation-delay: 2.7s;
-}
-#diag-list .skill-image:nth-child(4)
-{
-    animation-delay: 2.8s;
-}
-#diag-list .skill-image:nth-child(5)
-{
-    animation-delay: 2.9s;
-}
-#diag-list .skill-image:nth-child(6)
-{
-    animation-delay: 3s;
-}
+
 
 #diag-list .diag-item:nth-child(1) .diag-bar {
-    height: 80%;
+    height: 90%;
     animation-delay: 1.5s;
 }
 #diag-list .diag-item:nth-child(2) .diag-bar {
-    height: 60%;
+    height: 80%;
     animation-delay: 1.6s;
 }
 #diag-list .diag-item:nth-child(3) .diag-bar {
-    height: 60%;
+    height: 85%;
     animation-delay: 1.7s;
 }
 #diag-list .diag-item:nth-child(4) .diag-bar {
-    height: 40%;
+    height: 60%;
     animation-delay: 1.8s;
 }
 #diag-list .diag-item:nth-child(5) .diag-bar {
-    height: 30%;
+    height: 70%;
     animation-delay: 1.9s;
 }
 #diag-list .diag-item:nth-child(6) .diag-bar {
-    height: 30%;
+    height: 35%;
     animation-delay: 2s;
+}
+#diag-list .diag-item:nth-child(7) .diag-bar {
+    height: 28%;
+    animation-delay: 2.1s;
+}
+#diag-list .diag-item:nth-child(8) .diag-bar {
+    height: 40%;
+    animation-delay: 2.2s;
+}
+#diag-list .diag-item:nth-child(9) .diag-bar {
+    height: 80%;
+    animation-delay: 2.3s;
 }
 
 @keyframes diagram-left-anim {
@@ -506,7 +541,7 @@ animation: react-rotate 8s linear infinite;
 
 #the-hook h1 {
     font-size: 10vmin;
-    
+
 }
 
 #the-hook h2 {
@@ -523,7 +558,7 @@ animation: react-rotate 8s linear infinite;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    
+
     align-items: center;
     flex-wrap: wrap;
     font-weight: 100;
@@ -532,8 +567,10 @@ animation: react-rotate 8s linear infinite;
 }
 
 .intro-center {
-    
-    height: 100vh;
+
+    height: max-content;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #the-hook {
@@ -591,7 +628,7 @@ animation: react-rotate 8s linear infinite;
 
 .coding-text h1 {
     opacity: 1;
-    font-weight: 600;    
+    font-weight: 600;
     font-size: 5vmin;
     font-variant-caps: all-petite-caps;
 
@@ -637,7 +674,7 @@ input, button {
     0% {
         background-position: 0%, 0%;
     }
-    100% { 
+    100% {
         background-position: 100%, 100%;
     }
 }
