@@ -477,7 +477,10 @@ body {
 }
 
 .pin2 {
+<<<<<<< HEAD
     display: none;
+=======
+>>>>>>> main
     position: absolute;
     left: 62.5%;
     top: 77.3333333333%;
