@@ -48,6 +48,7 @@ const texts = [
 const mobile_animated = document.getElementById("morph-text-mobile");
 const back_animated = document.getElementById("introduction");
 let textIndex = 0;
+let ind = ((Math.random() * 11) + 1).toFixed();
 
 mobile_animated.addEventListener("animationend", () => {
     mobile_animated.style.animationName = "";
@@ -60,14 +61,30 @@ mobile_animated.addEventListener("animationend", () => {
     setTimeout(() => {mobile_animated.style.animationName = "MobileMorphAnim"; });
 });
 
-back_animated.addEventListener("animationend", () => {
-
+function reset_background() {
     back_animated.style.animationName = "";
-    const ind = ((Math.random() * 11) + 1).toFixed();
+    let new_ind = ((Math.random() * 10) + 1).toFixed();
+    if (new_ind == ind) {
+        new_ind--;
+    }
+
+    if (new_ind <= 0) {
+        new_ind = 11;
+    }
+
+    ind = new_ind;
+
     back_animated.style.backgroundImage = "linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)), url('./img/me_pic_" + ind.toString() + ".jpg')";
 
-    setTimeout(() => {back_animated.style.animationName = "BackAnim"; }, 1);
+    setTimeout(() => { back_animated.style.animationName = "BackAnim"; }, 1);
+}
+
+
+back_animated.addEventListener("animationend", () => {
+    reset_background();
 });
+
+reset_background();
 
 
 
