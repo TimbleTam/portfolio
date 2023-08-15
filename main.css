@@ -213,15 +213,19 @@ body {
         filter: blur(10px);
     }
 }
-.secondlinemobile {
-    display: none !important;
-}
+
 .secondlinedesktop {
     display: flex;
     flex-direction: row;
     width: 100% !important;
 }
 
+.secondlinemobile {
+    display: flex !important;
+    flex-direction: row;
+    width: max-content !important;
+    max-width: 100% !important;
+}
 
 
 @media only screen and (max-width: 850px) {
@@ -241,26 +245,12 @@ body {
 
 
 
-    #morph-text {
-        display: none;
-    }
 
-    #morph-text-mobile {
 
-        display: block !important;
 
-    }
 
-    .secondlinedesktop {
-        display: none !important;
-    }
 
-    .secondlinemobile {
-        display: flex !important;
-        flex-direction: row;
-        width: max-content !important;
-        max-width: 100% !important;
-    }
+
 
 
     .coding-text,.new {
@@ -589,23 +579,13 @@ body {
     margin: 0px;
 }
 
-#morph-text {
-    width: auto;
 
-    padding-left: 1vw;
-
-    filter: url(#threshold) blur(0.6px);
-    animation-delay: 3.2s;
-    color: var(--light);
-    transition: color 1s;
-}
 
 #morph-text-mobile {
 
     animation-duration: 0.5s;
     opacity: 0;
 
-    display: none;
     transition: color 1s;
 
     color: var(--light);
@@ -630,9 +610,7 @@ body {
 
 }
 
-#morph-text:hover {
-    color: var(--highlight1);
-}
+
 
 input, button {
     appearance: none;
