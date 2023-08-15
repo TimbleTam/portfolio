@@ -6,36 +6,40 @@
     --grey: #979797;
     --semilight: #c2c2c2;
     --light: #ececec;
-    --mecute: "me pic 1.jpg";
-    --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    --mecute: "../img/me_pic_1.jpg";
+    --grad: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
     --highlight1: rgb(231, 23, 30);
     --highlight2: rgb(48, 112, 184);
 }
 
-@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
 
 body {
     background-color: var(--background);
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Helvetica 25 UltraLight', sans-serif;
+    font-family: "Helvetica 25 UltraLight", sans-serif;
 }
 
 .page {
     background-color: var(--background);
-
     min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
-    overflow-x:visible;
+    overflow-x: visible;
     padding-left: 50px;
     padding-right: 50px;
 }
-
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -43,135 +47,126 @@ body {
     opacity: 0;
     background-color: var(--background);
     color: rgba(0, 0, 0, 0);
-    }
+}
 
 ::-webkit-scrollbar-thumb {
     background: var(--dark);
     border-radius: 10px;
     width: 5px;
-
 }
 
 ::-webkit-scrollbar-thumb:hover {
     width: 50px;
 }
 
-
 @keyframes intro_back {
-    0%{
+    0% {
         background-position: 50% 50%;
     }
-    30%{
-        background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 1.jpg");
+    30% {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(109, 109, 109, 0.5),
+                rgba(23, 23, 23, 1)
+            ),
+            url("../img/me_pic_1.jpg");
     }
     50% {
         background-position: 0% 0%;
     }
-    60%{
-        background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 2.jpg");
+    60% {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(109, 109, 109, 0.5),
+                rgba(23, 23, 23, 1)
+            ),
+            url("../img/me_pic_2.jpg");
     }
-    90%{
-        background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 3.jpg");
+    90% {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(109, 109, 109, 0.5),
+                rgba(23, 23, 23, 1)
+            ),
+            url("../img/me_pic_3.jpg");
     }
-    100%{
+    100% {
         background-position: 50% 50%;
     }
 }
 
 @keyframes BackAnim {
-    0%{
-
-        filter: blur(100px);
+    0% {
         opacity: 0;
     }
-
     40% {
-        filter: blur(0px);
         opacity: 1;
-
     }
     60% {
-        filter: blur(0px);
         opacity: 1;
-
     }
-
-    100%{
-        filter: blur(100px);
+    100% {
         opacity: 0;
     }
 }
 
 #introduction {
-    background-image:
-    linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-    url("me pic 1.jpg");
+    background-image: linear-gradient(
+            to bottom,
+            rgba(109, 109, 109, 0.5),
+            rgba(23, 23, 23, 1)
+        ),
+        url("../img/me_pic_1.jpg");
     background-size: cover;
-    filter: blur(100px);
     opacity: 0;
-
-
     animation-duration: 10s;
     width: 100%;
 }
 
 #introduction-div {
-
-    filter: blur(0px);
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     position: absolute;
+    align-items: center;
     height: 100%;
     width: 100%;
-    display: flex;
-        flex-direction: row;
-        justify-content: left;
-        /* animation: 30s intro_back infinite; */
-        width: 100vw;
-        padding-left: 5px;
-        padding-right: 5px;
-        position: absolute;
+
+    width: 100vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
     top: 0;
     background-color: transparent !important;
 }
 
 #short-about {
     background-color: var(--background);
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 100vh;
     align-items: center;
     flex-wrap: wrap;
-
     font-weight: 100;
     width: 100%;
 }
 
 #short-about2 {
     background-color: var(--background);
-
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     height: 100vh;
     align-items: center;
     flex-wrap: wrap;
-
     font-weight: 100;
     width: 100%;
 }
 
 .coding-text {
-
     max-width: 100vmin;
     min-width: 50%;
-
     display: flex;
     font-weight: 100;
     flex-direction: column;
@@ -182,10 +177,9 @@ body {
     text-align: start;
 }
 
-.coding-text,.new {
-
+.coding-text,
+.new {
     width: 50%;
-
     display: flex;
     font-weight: 100;
     flex-direction: column;
@@ -194,23 +188,19 @@ body {
 }
 
 @keyframes MobileMorphAnim {
-    0%{
+    0% {
         opacity: 0;
         translate: 0% 150%;
-        filter: blur(0px);
     }
-    25%{
+    25% {
         opacity: 1;
         translate: 0% 0%;
-        filter: blur(0px);
     }
-    70%{
+    70% {
         opacity: 1;
-        filter: blur(0px);
     }
-    100%{
+    100% {
         opacity: 0;
-        filter: blur(10px);
     }
 }
 
@@ -227,12 +217,9 @@ body {
     max-width: 100% !important;
 }
 
-
 @media only screen and (max-width: 850px) {
-
     .custom-header {
         background-color: var(--darker);
-
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -240,23 +227,11 @@ body {
     .custom-header .container {
         justify-content: space-between;
         width: 100%;
-
     }
 
-
-
-
-
-
-
-
-
-
-
-    .coding-text,.new {
-
+    .coding-text,
+    .new {
         width: 100%;
-
         display: flex;
         font-weight: 100;
         flex-direction: column;
@@ -266,16 +241,11 @@ body {
     }
 
     #introduction {
-
-        /* animation: 30s intro_back infinite; */
         width: 100vw;
-
-
     }
 
     .map {
-        background-image: url("UKSilhouette.png");
-
+        background-image: url("../img/UKSilhouette.png");
         width: 100%;
         aspect-ratio: 1/1;
         background-size: cover;
@@ -284,18 +254,16 @@ body {
         min-width: 250px;
         position: relative;
     }
-    .icons-home {
 
+    .icons-home {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         width: 100%;
-            aspect-ratio: 1/1;
-
-            align-self: center;
-            margin: 100px;
-            min-width: 250px;
+        aspect-ratio: 1/1;
+        align-self: center;
+        margin: 100px;
+        min-width: 250px;
     }
 
     .page-h1-body {
@@ -311,7 +279,6 @@ body {
     #short-about {
         min-height: max-content;
         height: max-content;
-
     }
 }
 
@@ -325,7 +292,6 @@ body {
 
 .coding-text h2 {
     opacity: 0.8;
-
     font-weight: 100;
 }
 
@@ -339,22 +305,20 @@ body {
     text-align: center;
 }
 
-
-
 #hello {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     font-weight: 900;
     padding-left: 2.5vw;
     width: 100%;
-
+    height: 150px;
 }
 
 #hello li {
     display: flex;
     flex-direction: row;
-    padding: 0,0;
+    padding: 0, 0;
     margin-left: 2.5%;
     flex-wrap: nowrap;
     align-self: stretch;
@@ -364,10 +328,10 @@ body {
 #second-line {
     display: flex;
     flex-direction: row;
-    padding: 0,0;
+    padding: 0, 0;
     margin-left: 5%;
     flex-wrap: nowrap;
-    width: 5rem;
+    width: 90% !important;
     align-self: stretch;
     height: min-content;
 }
@@ -381,7 +345,7 @@ body {
 }
 
 #introduction-div h1:hover {
-    color: crimson
+    color: crimson;
 }
 
 #introduction-div h2 {
@@ -448,22 +412,17 @@ body {
 }
 
 .map {
-    background-image: url("UKSilhouette.png");
-
+    background-image: url("../img/UKSilhouette.png");
     width: 50%;
     aspect-ratio: 1/1;
     background-size: cover;
     align-self: center;
-
-
 }
 
 .icons-home {
     width: 50%;
-        aspect-ratio: 1/1;
-
-        align-self: center;
-
+    aspect-ratio: 1/1;
+    align-self: center;
 }
 
 .pin2 {
@@ -474,12 +433,11 @@ body {
     border-radius: 50%;
     border: 8px solid var(--highlight1);
     width: 8px;
-
     height: 8px;
-
     animation-delay: 1s;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .map-animation {
@@ -511,13 +469,11 @@ body {
         width: 200px;
         height: 200px;
     }
-
     80% {
         border: 4px solid var(--highlight1);
         opacity: 1;
         width: 4px;
         height: 4px;
-
     }
     90% {
         border: 20px solid var(--highlight1);
@@ -525,7 +481,6 @@ body {
         width: 20px;
         height: 20px;
     }
-
     100% {
         border: 8px solid var(--highlight1);
         opacity: 1;
@@ -533,7 +488,6 @@ body {
         height: 8px;
     }
 }
-
 
 #introduction-div h2:hover {
     color: var(--highlight1);
@@ -545,7 +499,7 @@ body {
     padding-left: 1vw;
     animation-delay: 1s;
     transition: all 0.5s;
-    overflow-wrap:normal
+    overflow-wrap: normal;
 }
 
 @keyframes iconslideshow {
@@ -579,24 +533,16 @@ body {
     margin: 0px;
 }
 
-
-
 #morph-text-mobile {
-
     animation-duration: 0.5s;
     opacity: 0;
-
     transition: color 1s;
-
     color: var(--light);
     word-wrap: break-word;
-
 }
 
 #morph-text-mobile:hover {
-
     color: var(--highlight1);
-
 }
 
 #text1,
@@ -607,12 +553,10 @@ body {
     font-size: 5vmax;
     text-align: left;
     font-weight: 900;
-
 }
 
-
-
-input, button {
+input,
+button {
     appearance: none;
     border: none;
     outline: none;
@@ -627,7 +571,6 @@ input, button {
 
 #contact-me:hover {
     color: var(--highlight1);
-
 }
 
 @keyframes background-tile {
@@ -636,6 +579,5 @@ input, button {
     }
     100% {
         background-position: 100%, 100%;
-
     }
 }

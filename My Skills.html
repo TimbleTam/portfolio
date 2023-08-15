@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liam Fortune</title>
-    <link rel="icon" type="image/x-icon" href="computer icon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/computer_icon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="Skills.css" />
-    <link rel="stylesheet" href="animation.css" />
-    <link rel="stylesheet" href="navigationbar.css" />
-    <link rel="stylesheet" href="project cards.css" />
+    <link rel="stylesheet" href="./styles/Skills.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <link rel="stylesheet" href="./styles/navigationbar.css" />
+    <link rel="stylesheet" href="./styles/project cards.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -20,16 +20,16 @@
 
 <header class="custom-header">
     <div class="container">
-        <h2 class="logo" href="index.html"> LIAM FORTUNE</h2>
+        <h2 class="logo" href="index.html" data-text="name"></h2>
         <div class="burger-toggle" onclick="togglenav();">
             <div></div>
             <div></div>
             <div></div>
-          </div>
+        </div>
         <nav class="toggle-nav">
             <ul>
-                <li><a href="index.html">About </a></li>
-                <li><a href="Contact Me.html" id="contact-me">Contact Me </a></li>
+                <li><a href="index.html" data-text="TabAbout"></a></li>
+                <li><a href="Contact Me.html" id="contact-me" data-text="TabContact"></a></li>
             </ul>
         </nav>
     </div>
@@ -39,12 +39,10 @@
     <main>
 
         <div id="intro-center" class="page">
-
             <div id="the-hook">
-                <h1 class="animate__animated animate__backInLeft">Diverse Skill Set</h1>
-                <h2 class="animate__animated animate__backInLeft">Always Learning More</h2>
+                <h1 class="animate__animated animate__backInLeft" data-text="skills-intro-1"></h1>
+                <h2 class="animate__animated animate__backInLeft" data-text="skills-intro-2"></h2>
             </div>
-
             <div id="diagram">
                 <div id="diagram-bottom"></div>
                 <div id="diagram-side"></div>
@@ -53,167 +51,159 @@
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
                             <a href="#html-page" id="diag-bar-shortcut"> </a>
-                            <img alt="JavaScript" src="2.png" class="skill-image" href="#short-about" />
+                            <img alt="JavaScript" src="./img/2.png" class="skill-image" href="#short-about" />
                         </div>
                     </div>
                     <!-- html -->
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
                             <a href="#html-page" id="diag-bar-shortcut"> </a>
-                            <img alt="Html" src="4.png" class="skill-image" href="#short-about" />
+                            <img alt="Html" src="./img/4.png" class="skill-image" href="#short-about" />
                         </div>
                     </div>
                     <!-- Vue -->
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
                             <a href="#vue-page" id="diag-bar-shortcut"> </a>
-                            <img alt="Html" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" class="skill-image" href="#short-about" />
+                            <img alt="Html"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png"
+                                class="skill-image" href="#short-about" />
                         </div>
                     </div>
                     <!-- React -->
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
                             <a href="#react-page" id="diag-bar-shortcut"> </a>
-                            <img alt="Html" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" class="skill-image" href="#short-about" />
+                            <img alt="Html"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                                class="skill-image" href="#short-about" />
                         </div>
                     </div>
                     <!-- csharp -->
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
                             <a href="#sharp-page" id="diag-bar-shortcut"> </a>
-                            <img alt="CSharp" src="0.png" class="skill-image" href="#short-about" />
-
+                            <img alt="CSharp" src="./img/0.png" class="skill-image" href="#short-about" />
                         </div>
                     </div>
                     <!-- python -->
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
                             <a href="#python-page" id="diag-bar-shortcut"> </a>
-                            <img alt="Python" src="6.png" class="skill-image" href="#short-about" />
+                            <img alt="Python" src="./img/6.png" class="skill-image" href="#short-about" />
                         </div>
                     </div>
                     <!-- VB -->
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
                             <a href="#vb-page" id="diag-bar-shortcut"> </a>
-                            <img alt="Html" src="https://img.favpng.com/17/8/14/visual-basic-net-c-computer-programming-net-framework-png-favpng-z4sFkCRD9WH4Fpft7UMr6SmiX.jpg" class="skill-image" href="#short-about" />
+                            <img alt="Html"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/1200px-VB.NET_Logo.svg.png"
+                                class="skill-image" href="#short-about" />
                         </div>
                     </div>
-
                     <!-- unity -->
                     <div class="diag-item" id="unity">
                         <div class="diag-bar">
-                                <a href = " #unity-page" id="diag-bar-shortcut"> </a>
-                                <img alt="Unity" src="1.png" class="skill-image" href="#short-about" />
+                            <a href=" #unity-page" id="diag-bar-shortcut"> </a>
+                            <img alt="Unity" src="./img/1.png" class="skill-image" href="#short-about" />
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
-
             </div>
         </div>
 
         <div class="intro-center" id="html-page">
             <div class="coding-text">
-                <h1 class="">Javascript, CSS and HTML</h1>
+                <h1 class="section-title" data-text="skills-section-1-title"></h1>
                 <br />
-                <h2 class="">With my current position being focussed primarily on Front End work inside of fairly vanilla Javascript HTML and CSS, my understanding, fluency and speed in these is very high.</h2>
+                <h2 data-text="skills-section-1-desc-1"></h2>
                 <br />
-                <h2 class="">With javascript I have brought about solutions that are a first in my current industry, engineering solutions that tackle issues in content delivery that havent been addressed before on the level my code has.</h2>
+                <h2 data-text="skills-section-1-desc-2"></h2>
                 <br />
-                <h2 class="">While I (like many) prefer to use frameworks to build my sites and applications, my fundamental knowledge of these languages is the backbone of my current direction in tech.</h2>
+                <h2 data-text="skills-section-1-desc-3"></h2>
 
             </div>
             <div class="skill-image-container">
                 <div class="react-container">
-                    <img src="2.png" alt="" class="opacitytrans">
-                    <img src="4.png" alt="" class="opacitytrans">
-                    <img src="5.png" alt="" class="opacitytrans">
-                    <img src="13.png" alt="" class="opacitytrans">
+                    <img src="./img/2.png" alt="" class="opacitytrans">
+                    <img src="./img/4.png" alt="" class="opacitytrans">
+                    <img src="./img/5.png" alt="" class="opacitytrans">
+                    <img src="./img/13.png" alt="" class="opacitytrans">
                 </div>
             </div>
         </div>
         <div class="examples-container">
-            <h3> Examples:</h3>
+            <h3 data-text="examples"></h3>
             <section class="card-area">
 
-                <article class="card" id="resturant-helper-card">
+                <article class="card" id="resturant-helper-card"
+                    style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),url('./img/resturant_helper.png');">
                     <header class="card-header">
-                        <h1>Restrntr</h1>
+                        <h1 data-text="skills-section-1-card-1-title"></h1>
                     </header>
-
                     <div class="card-body">
-                        <h1>Initially built as a simple command line script in Python. Restrntr grew to be a fully
-                            usable web app hosted through GitHub Pages.</h1>
-                            <br />
-                        <h1>The goal for Restrntr was to be used to help myself and anyone else eating out with a group
-                            decide where to go. Using local storage and a reletively simple weighted randomised choice.
-                            Restrntr takes the ratings of of all members of a group for selected resturants to find the
-                            best place to eat.</h1>
+                        <h1 data-text="skills-section-1-card-1-desc-1"></h1>
+                        <br />
+                        <h1 data-text="skills-section-1-card-1-desc-2"></h1>
                     </div>
 
                     <div class="card-button-area">
-                        <a href="https://timbletam.github.io/Resturant-Helper-v1/">Visit Restrntr.</a>
-                        <a href="https://github.com/TimbleTam/Resturant-Helper-v1">Source Code</a>
+                        <a href="https://timbletam.github.io/Resturant-Helper-v1/" data-text="visit-page"></a>
+                        <a href="https://github.com/TimbleTam/Resturant-Helper-v1" data-text="repo"></a>
                     </div>
 
                     <footer class="card-footer">
-                        <h1>Javascript</h1>
-                        <h1>HTML</h1>
-                        <h1>CSS</h1>
+                        <h1 data-text="javascript"></h1>
+                        <h1 data-text="html"></h1>
+                        <h1 data-text="css"></h1>
                     </footer>
                 </article>
 
                 <article class="card" id="melvin-card">
                     <header class="card-header">
-                        <h1>Melvin</h1>
+                        <h1 data-text="skills-section-1-card-2-title"></h1>
                     </header>
 
                     <div class="card-body">
-                        <h1>Built for the sake of experimentation into LLM's Melvin is a front end interface used to present users with an example of AI role-play in a training scenario.</h1>
+                        <h1 data-text="skills-section-1-card-2-desc-1"></h1>
                         <br />
-                        <h1>Melvin takes the role of an angervated customer demanding a refund on an Item, with the user tasked with having to use good language and communication to lower Melvin's aggression and convince them to accept another proposal, This is assisted by the presence of an emotional response bar for Melvin, as well as a multi-tiered system of current aggression to further simulate the experience.</h1>
+                        <h1 data-text="skills-section-1-card-2-desc-2"></h1>
 
                     </div>
 
                     <div class="card-button-area">
-                        <a href="https://github.com/TimbleTam/melvin">Repo</a>
+                        <a href="https://github.com/TimbleTam/melvin" data-text="repo"></a>
                     </div>
 
                     <footer class="card-footer">
-                        <h1>Javascript</h1>
-                        <h1>HTML</h1>
-                        <h1>CSS</h1>
+                        <h1 data-text="javascript"></h1>
+                        <h1 data-text="html"></h1>
+                        <h1 data-text="css"></h1>
                     </footer>
                 </article>
 
-                <article class="card" id="portfolio-card">
+                <article class="card" id="portfolio-card"
+                    style='background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),url("./img/portfolio.png");'>
 
                     <header class="card-header">
-                        <h1>Portfolio</h1>
-
+                        <h1 data-text="skills-section-1-card-3-title"></h1>
                     </header>
 
                     <div class="card-body">
-                        <h1>The Site you're on now. My portfolio is written from the ground up with html and css, with a
-                            subtle use of javascript to help provide you a more tactile experience when looking to hire.
+                        <h1 data-text="skills-section-1-card-3-desc-1">
                         </h1>
                     </div>
 
                     <div class="card-button-area">
-                        <a href="https://timbletam.github.io/portfolio/">Revisit Portfolio</a>
-                        <a href="https://github.com/TimbleTam/portfolio">Source Code</a>
+                        <a href="https://timbletam.github.io/portfolio/" data-text="visit-page"></a>
+                        <a href="https://github.com/TimbleTam/portfolio" data-text="repo"></a>
                     </div>
 
                     <footer class="card-footer">
-                        <h1>CSS</h1>
-                        <h1>HTML</h1>
-                        <h1>Javascript</h1>
+                        <h1 data-text="css"></h1>
+                        <h1 data-text="html"></h1>
+                        <h1 data-text="javascript"></h1>
                     </footer>
 
                 </article>
@@ -223,38 +213,38 @@
 
         <div class="intro-center" id="vue-page">
             <div class="coding-text">
-                <h1 class="">Vue.js</h1>
+                <h1 class="section-title" data-text="vue"></h1>
                 <br />
-                <h2 class="">With Vue being the framework I have the most time with, speed with it is what sets it apart.</h2>
+                <h2 data-text="skills-section-2-desc-1"></h2>
                 <br />
-                <h2 class="">Before getting into the industry I previously had no experience with Vue or other Front End frameworks. But that has changed over time. Now being able to use it as a powerful tool to make fast, beautiful, reactive web apps that have stunned my clientbase and required very little QA.</h2>
+                <h2 data-text="skills-section-2-desc-2"></h2>
             </div>
             <div class="skill-image-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="" class="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png"
+                    alt="">
             </div>
         </div>
         <div class="examples-container">
-            <h3> Examples:</h3>
-            <section class="large-card-area">
+            <h3 data-text="examples"></h3>
+            <section class="card-area">
 
-                <article class="large-card" id="phase-3-helper-card">
+                <article class="card" id="phase-3-helper-card">
                     <header class="card-header">
-                        <h1>Phase 3 Media</h1>
+                        <h1 data-text="skills-section-2-card-1-title"></h1>
                     </header>
-
                     <div class="card-body">
-                        <With>An early, unfinished personal project for learning vue. Phase-3-Media is intended to be built as a home page for a fictional, small scale videography business with a primary focus around animation and responsive behaviour.</h1>
+                        <h1 data-text="skills-section-2-card-1-desc-1"></h1>
                     </div>
 
                     <div class="card-button-area">
-                        <a href="https://github.com/TimbleTam/phase-3-media">Repo</a>
+                        <a href="https://github.com/TimbleTam/phase-3-media" data-text="repo"></a>
                     </div>
 
                     <footer class="card-footer">
-                        <h1>Vue.js</h1>
-                        <h1>Javascript</h1>
-                        <h1>HTML</h1>
-                        <h1>CSS</h1>
+                        <h1 data-text="vue"></h1>
+                        <h1 data-text="javascript"></h1>
+                        <h1 data-text="html"></h1>
+                        <h1 data-text="css"></h1>
                     </footer>
                 </article>
 
@@ -263,92 +253,108 @@
         </div>
 
         <div class="intro-center" id="react-page">
+
             <div class="skill-image-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" class="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                    alt="">
             </div>
             <div class="coding-text">
-                <h1 class="">React<i class="fab fa-reacteurope"></i></h1>
+                <h1 class="section-title" data-text="react"></h1>
                 <br />
-                <h2 class="">While I am new to React, I’m finding myself picking it up very quickly.</h2>
+                <h2 data-text="skills-section-3-desc-1"></h2>
                 <br />
-                <h2 class="">I have been trying to learn React on the side as my current place of work is preparing to pivot towards using it as our primary Front End framework and have been finding myself surprised by the speed at which I can debug and learn inside of this framework and how much its Object Orientation improves the developer experience.</h2>
-
+                <h2 data-text="skills-section-3-desc-2"></h2>
             </div>
-
         </div>
+
 
         <div class="intro-center" id="sharp-page">
 
             <div class="skill-image-container">
-                <img src="0.png" alt="" class="">
+                <img src="./img/0.png" alt="">
             </div>
             <div class="coding-text">
-                <h1 class="">C#</h1>
+                <h1 class="section-title" data-text="c-sharp"></h1>
                 <br />
-                <h2 class="">C# is by far the language I have the most time with</h2>
+                <h2 data-text="skills-section-4-desc-1"></h2>
                 <br />
-                <h2 class="">I have used C# to create highly functional code for my games over the years
-                    and delved into high level concepts like Behaviour Trees to craft the best experience for potential
-                    players</h2>
+                <h2 data-text="skills-section-4-desc-2"></h2>
                 <br />
-                <h2 class="">Logically, I have also using C# and the dotnet framework on Back End solutions, managing user data and content delivery for clients.</h2>
-                    <br />
-                <h2 class="">My previous personal projects also use C# to its full capabilities. With custom
-                    classes used far and wide to bring out the most of my projects, Optimise the experience down to the
-                    smallest it can possibly be and store data in ways that are accessible for the user and lightweight
-                    on their machine</h2>
+                <h2 data-text="skills-section-4-desc-3"></h2>
+                <br />
+                <h2 data-text="skills-section-4-desc-4"></h2>
             </div>
         </div>
 
-
-
-        <div class="intro-center" id="python-page">
-
-            <div class="coding-text">
-                <h1 class="">Python</h1>
-                <br />
-                <h2 class="">While I am new to the language, thanks to its simplistic syntax I have made
-                    rapid progress learing</h2>
-                <br />
-                <h2 class="">So far with Python I have worked with flask and SQL to develop personal
-                    projects and am looking to develop my knowledge further building my current projects further and
-                    learn other tools such as mongo DB</h2>
-
-            </div>
-            <div class="skill-image-container">
-                <img src="6.png" alt="" class="">
-            </div>
-
-
-
-        </div>
         <div class="examples-container">
-            <h3> Examples:</h3>
+            <h3 data-text="examples"></h3>
             <section class="card-area">
-                <article class="card" id="flask-app-card">
+                <article class="card" id="perfect-outcast-card">
 
                     <header class="card-header">
-                        <h1>Flask Web App</h1>
-
+                        <h1 data-text="skills-section-4-card-1-title"></h1>
                     </header>
 
                     <div class="card-body">
-                        <h1>What started as a small project to learn the intricacies of Python 3. The Flask Web App quickly became a learning experience in SQL as well as smart usage of a small-scale database.</h1>
+                        <h1 data-text="skills-section-4-card-1-desc-1">
+                        </h1>
                         <br>
-                        <h1>The scenario of this project was to act as an internal communication server for small teams in which to communicate with each other through a messaging client. With a focus on keeping a low storage footprint, the messages are held for a total of three days. The Web App also contains a personal note-taking service which is only accessible by the logged-in individual.</h1>
+                        <h1 data-text="skills-section-4-card-1-desc-2">
+                        </h1>
+                        <br>
+                        <h1 data-text="skills-section-4-card-1-desc-3">
+                        </h1>
                     </div>
 
                     <div class="card-button-area">
-                        <a href="https://timbletam.github.io/Resturant-Helper-v1/">Visit Restrntr.</a>
+                        <a href="https://github.com/TimbleTam/Perfect-Outcast-Favorite-Components" data-text="repo"></a>
                     </div>
 
                     <footer class="card-footer">
-                        <h1>Python</h1>
-                        <h1>HTML</h1>
-                        <h1>CSS</h1>
-                        <h1>Bootstrap</h1>
-                        <h1>Flask</h1>
-                        <h1>SQL</h1>
+                        <h1 data-text="unity"></h1>
+                        <h1 data-text="c-sharp"></h1>
+                    </footer>
+
+                </article>
+
+            </section>
+        </div>
+
+        <div class="intro-center" id="python-page">
+            <div class="coding-text">
+                <h1 data-text="python"></h1>
+                <br />
+                <h2 data-text="skills-section-5-desc-1"></h2>
+                <br />
+                <h2 data-text="skills-section-5-desc-2"></h2>
+            </div>
+            <div class="skill-image-container">
+                <img src="./img/6.png" alt="">
+            </div>
+        </div>
+        <div class="examples-container">
+            <h3 data-text="examples"></h3>
+            <section class="card-area">
+                <article class="card" id="flask-app-card"
+                    style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),url('./img/flask_web_app.png');">
+                    <header class="card-header">
+                        <h1 data-text="skills-section-5-card-1-title"></h1>
+                    </header>
+                    <div class="card-body">
+                        <h1 data-text="skills-section-5-card-1-desc-1"></h1>
+                        <br>
+                        <h1 data-text="skills-section-5-card-1-desc-2"></h1>
+                    </div>
+
+                    <div class="card-button-area">
+                        <a href="https://timbletam.github.io/Resturant-Helper-v1/" data-text="repo"></a>
+                    </div>
+
+                    <footer class="card-footer">
+                        <h1 data-text="python"></h1>
+                        <h1 data-text="html"></h1>
+                        <h1 data-text="css"></h1>
+                        <h1 data-text="sql"></h1>
                     </footer>
 
                 </article>
@@ -358,78 +364,64 @@
 
         <div class="intro-center" id="vb-page">
             <div class="skill-image-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/1200px-VB.NET_Logo.svg.png" alt="" class="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/1200px-VB.NET_Logo.svg.png"
+                    alt="">
             </div>
             <div class="coding-text">
-                <h1 class="">Visual Basic</h1>
+                <h1 class="section-title" data-text="vb"></h1>
                 <br />
-                <h2 class="">In my current position, I am having to work with, maintain and in some cases produce legacy code inside of VB for our server infrastructure. Because of this I’ve developed a decent level of understanding of VB.</h2>
+                <h2 data-text="skills-section-6-desc-1"></h2>
                 <br />
-                <h2 class="">Though not a preferred language for Back End. My capability with it has been required for my level of confidence with cross language integration.</h2>
-
+                <h2 data-text="skills-section-6-desc-2"></h2>
             </div>
 
         </div>
+        <div class="examples-container"></div>
 
-        <div class="intro-center" id="unity-page">
+        <div class="intro-center" id="unity-page" style="background: linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),url('./img/unity_screenshot.png');">
             <section class="coding-text">
-                <h1 class="">Unity</h1>
+                <h1 data-text="unity"></h1>
                 <br />
-                <h2 class="">I've been using Unity since 2018</h2>
+                <h2 data-text="skills-section-7-desc-1"></h2>
                 <br />
-                <h2 class="">Since then I have created a created a wide array of tools and and mechanics to
-                    build rich and exciting games</h2>
+                <h2 data-text="skills-section-7-desc-2"></h2>
                 <br />
-                <h2 class="">From the beginning I have avoided using third party asset packages, opting to
-                    make my own library of bespoke tools and frameworks to speed up my workflow and make my games come
-                    to life</h2>
-                <br />
-                <h2 class=""></h2>
-
+                <h2 data-text="skills-section-7-desc-3"></h2>
             </section>
             <div class="skill-image-container">
-                <img src="1.png" alt="" class="">
+                <img src="./img/1.png" alt="">
             </div>
         </div>
         <div class="examples-container">
-            <h3> Examples:</h3>
-            <section class="large-card-area">
-                <article class="large-card" id="perfect-outcast-card">
+            <h3 data-text="examples"></h3>
+            <section class="card-area">
+                    <article class="card" id="perfect-outcast-card">
 
-                    <header class="card-header">
-                        <h1>Perfect Outcast</h1>
-                    </header>
+                        <header class="card-header">
+                            <h1 data-text="skills-section-4-card-1-title"></h1>
+                        </header>
 
-                    <div class="card-body">
-                        <h1>
-                            The Accumulation of my Programming, Modelling and Design Skills. Perfect Outcast is the project I have spent the most amount of my time on and has been a passion of mine for the last two years.
-                        </h1>
+                        <div class="card-body">
+                            <h1 data-text="skills-section-4-card-1-desc-1">
+                            </h1>
                             <br>
-                        <h1>
-                            Perfect Outcast is the story of Lily. A girl wakes up to a world where all those around her have turned into demons. Equipped with just a sword, A gun and a total fear for what her life has become. She has to find a way to turn the people of Johanna City back to normal or die trying. But the world and what she knows as normal may not be as different as she imagines.
-                        </h1>
+                            <h1 data-text="skills-section-4-card-1-desc-2">
+                            </h1>
                             <br>
-                        <h1>
-                            Taking on the Genre of character action. A huge focus for this project was optimisation and user experience. From the beginning, the player needed to have as much breathing room as possible to enter a flow state and a high frame rate and comfortable controls were paramount to making this the case. Weeks of planning and hours of code testing have eventually culminated in an experience that lets players feel like the hero Lily is trying to be.
-                        </h1>
-                            <br>
-                        <h1>
-                            For more, you can see the gallery of Images from the game, look at some of my favourite components I have made for the project, or email me for an installer.
-                        </h1>
-                    </div>
+                            <h1 data-text="skills-section-4-card-1-desc-3">
+                            </h1>
+                        </div>
 
-                    <div class="card-button-area">
-                        <a href="https://github.com/TimbleTam/Perfect-Outcast-Favorite-Components">See My Favourite Components Repo</a>
-                    </div>
+                        <div class="card-button-area">
+                            <a href="https://github.com/TimbleTam/Perfect-Outcast-Favorite-Components"
+                                data-text="repo"></a>
+                        </div>
 
-                    <footer class="card-footer">
-                        <h1>Unity</h1>
-                        <h1>CSharp</h1>
-                        <h1>Blender</h1>
-                    </footer>
-
-                </article>
-
+                        <footer class="card-footer">
+                            <h1 data-text="unity"></h1>
+                            <h1 data-text="c-sharp"></h1>
+                        </footer>
+                    </article>
             </section>
         </div>
 
@@ -437,16 +429,13 @@
 
         <div class="intro-center" id="more-page">
             <div class="coding-text">
-                <h1 class="">Never Satified</h1>
+                <h1 data-text="skills-footer-title"></h1>
                 <br />
-                <h2 class="">Technology, Software and Storytelling have all ways been my biggest passions
-                    and my drive to learn more about them has never slowed</h2>
+                <h2 data-text="skills-footer-desc-1"></h2>
                 <br />
-                <h2 class="">My Goal in the software industry is to build my skillset further and further to
-                    become the most valuable person to my team as I can be</h2>
+                <h2 data-text="skills-footer-desc-2"></h2>
                 <br />
-                <h2 class="">I find the process or learning a new language or tool from scratch incredibly
-                    fun and I hope I can learn your tech stack next</h2>
+                <h2 data-text="skills-footer-desc-3"></h2>
 
             </div>
             <div class="skill-image-container">
@@ -463,12 +452,19 @@
     </main>
 
 
-    <script src="Skills.js" async></script>
-    <script src="animationcontrol.js" async></script>
+    <script src="./scripts/Skills.js"></script>
+    <script src="./scripts/animationcontrol.js"></script>
+    <script src="./scripts/english.js"></script>
+
+    <script>
+        run_trans();
+
+    </script>
+
     <script>function togglenav() {
-        document.getElementsByClassName("burger-toggle")[0].classList.toggle("active");
-        document.getElementsByClassName("toggle-nav")[0].classList.toggle("active");
-    }</script>
+            document.getElementsByClassName("burger-toggle")[0].classList.toggle("active");
+            document.getElementsByClassName("toggle-nav")[0].classList.toggle("active");
+        }</script>
 
 
 

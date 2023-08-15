@@ -5,7 +5,7 @@
     --grey: #979797;
     --semilight: #c2c2c2;
     --light: #ececec;
-    --mecute: "me pic 1.jpg";
+    --mecute: "../img/me_pic_1.jpg";
     --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     --highlight1: rgb(184, 48, 48);
     --highlight2: rgb(48, 112, 184);
@@ -121,7 +121,7 @@ body {
             rgba(24, 24, 24, 1),
             rgba(245, 246, 252, 0)
         ),
-        url("background idea.png");
+        url("../img/background_idea.png");
     min-height: 100vh;
     animation: background-tile 30s linear infinite;
     font-weight: 900;

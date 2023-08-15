@@ -8,7 +8,7 @@ function transition_icons(ind) {
     software_icon_home.removeChild(software_icon_home.firstChild);
 
     const new_pic = document.createElement("img");
-    new_pic.src = ind + ".png";
+    new_pic.src = "./img/" + ind + ".png";
     new_pic.classList.add("icon-pic-new");
     new_pic.type = "icon-pic-new";
     if (ind >= 7) {
@@ -64,7 +64,7 @@ back_animated.addEventListener("animationend", () => {
 
     back_animated.style.animationName = "";
     const ind = ((Math.random() * 11) + 1).toFixed();
-    back_animated.style.backgroundImage = "linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)), url('me pic " + ind.toString() + ".jpg')";
+    back_animated.style.backgroundImage = "linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)), url('./img/me_pic_" + ind.toString() + ".jpg')";
 
     setTimeout(() => {back_animated.style.animationName = "BackAnim"; }, 1);
 });

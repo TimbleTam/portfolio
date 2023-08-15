@@ -1,0 +1,179 @@
+:root {
+    --darkest: rgba(23, 23, 23, 1);
+    --darker: rgb(66, 66, 66);
+    --background: rgba(23, 23, 23, 1);
+    --dark: rgb(109, 109, 109);
+    --grey: #979797;
+    --semilight: #c2c2c2;
+    --light: #ececec;
+    --mecute: "../img/me_pic_1.jpg";
+    --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    --highlight1: rgb(231, 23, 30);
+    --highlight2: rgb(48, 112, 184);
+}
+
+.examples-container {
+    background-color: var(--darkest);
+    min-height: 150px;
+}
+
+.examples-container h3 {
+    padding: 20px;
+    color: var(--light);
+    font-size: 4rem;
+    font-weight: 600;
+    font-variant-caps: all-petite-caps;
+
+}
+
+.card-area {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 850px) {
+    .card:hover {
+        padding: 50px;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+
+.card-header h1 {
+    font-size: 2rem !important;
+}
+
+.card:hover {
+    padding: 50px;
+}
+
+.card {
+    background-size: cover !important;
+    align-self: flex-start;
+    max-width: 90%;
+    min-width: 30%;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--darker);
+    height: auto;
+    border-radius: 15px;
+    transition: 0.5s all;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card header {
+    height: auto;
+    margin: 10px;
+}
+
+.card header h1 {
+    font-size: 3rem;
+    color: var(--light);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card-body {
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--light);
+}
+
+
+.card-button-area {
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.card-button-area a {
+    color: white;
+    text-decoration: none;
+    background-color:var(--darker);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card-button-area a[data-text="repo"]{
+    background-color: rgb(12, 114, 165);
+}
+
+.class-body h1 {
+    font-size: 1rem;
+}
+
+.card-button-area a:hover {
+    background-color: green;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+}
+
+
+.card footer {
+    height: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card footer h1 {
+    align-self: center;
+    border-color: var(--semilight);
+    color: var(--semilight);
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1rem;
+    margin-left: 5px;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.card footer h1:hover {
+    border-color: white;
+    color: var(--darkest);
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 2px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+#perfect-outcast-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),url("../img/perfect_outcast.png");
+    background-size: cover;
+}

@@ -6,7 +6,7 @@
     --grey: #979797;
     --semilight: #c2c2c2;
     --light: #ececec;
-    --mecute: "me pic 1.jpg";
+    --mecute: "../img/me_pic_1.jpg";
     --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     --highlight1: rgb(231, 23, 30);
     --highlight2: rgb(48, 112, 184);
@@ -36,6 +36,10 @@
     }
 }
 
+html {
+    overflow-x: hidden;
+}
+
 #contact-button {
     background-color: #979797;
     font-size: large;
@@ -56,7 +60,7 @@
 
 .page {
     background-color: var(--background);
-    background-image: url("background idea.png");
+    background-image: url("../img/background_idea.png");
     min-height: 100vh;
     color: var(--light);
     width: 100%;
@@ -81,10 +85,10 @@
 #unity-page {
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
-    url("unity screenshot.png");
+    url("../img/unity_screenshot.png");
     background-size: cover;
     background-position: 50%;
-    min-height: 100vh;
+
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -102,7 +106,6 @@
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
     url("https://vueschool.io/storage/media/c79100806b1bcc517afb50e981d605ed/vue-js-3-fundamentals-with-the-composition-api.jpg");
-    min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -120,7 +123,6 @@
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
     url("https://learn.microsoft.com/en-us/visualstudio/get-started/visual-basic/media/vs-2019/vb-code-window-whatisyourname-dark.png?view=vs-2022");
-    min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -139,7 +141,6 @@
     url("https://miro.medium.com/v2/resize:fit:1400/0*MZN4EDkeFMLexrLq");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -154,7 +155,6 @@
     background-color:
     rgba(23, 23, 23, 1);
     animation: background-tile 30s linear infinite;
-    min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -179,10 +179,9 @@
 #blend-page {
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
-    url("blender screenshot.png");
+    url("../img/blender_screenshot.png");
     background-size: cover;
     background-position: 50%;
-    min-height: 100vh;
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -198,10 +197,10 @@
 #sharp-page {
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
-    url("csharp screenshot.png");
+    url("../img/csharp_screenshot.png");
     background-size: cover;
     background-position: 50%;
-    min-height: 100vh;
+
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -217,10 +216,10 @@
 #html-page {
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
-    url("html screenshot.png");
+    url("../img/html_screenshot.png");
     background-size: cover;
     background-position: 50%;
-    min-height: 100vh;
+
     color: var(--light);
     width: 100%;
     font-weight: 100;
@@ -301,7 +300,7 @@ animation: react-rotate 8s linear infinite;
 #python-page {
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
-    url("python screenshot.png");
+    url("../img/python_screenshot.png");
     background-size: cover;
     background-position: 50%;
     color: var(--light);
@@ -323,22 +322,22 @@ animation: react-rotate 8s linear infinite;
     }
     20%{
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 1.jpg");
+        url("../img/me_pic_1.jpg");
     }
     40%{
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 2.jpg");
+        url("../img/me_pic_2.jpg");
     }
     50% {
         background-position: 0% 0%;
     }
     60%{
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 3.jpg");
+        url("../img/me_pic_3.jpg");
     }
     80%{
         background-image: linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-        url("me pic 4.jpg");
+        url("../img/me_pic_4.jpg");
     }
     100%{
         background-position: 50% 50%;
@@ -348,8 +347,9 @@ animation: react-rotate 8s linear infinite;
 #diagram {
     align-self: center;
     position: relative;
-    width: 85vmin;
-    height: 25vmin;
+    width: 85%;
+    min-height: 19vh;
+    max-height: 500px;
 }
 
 #diag-bar-shortcut {
@@ -450,6 +450,7 @@ animation: react-rotate 8s linear infinite;
     position: relative;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition: all 0.2s;
 
 }
 
@@ -518,13 +519,13 @@ animation: react-rotate 8s linear infinite;
 #introduction {
     background-image:
     linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-    url("me pic 1.jpg");
-    background-size: 100vmax;
+    url("../img/me_pic_1.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: left;
     animation: 30s  intro_back infinite;
-    width: 100vw;
+    width: 100%;
 }
 
 #intro-container {
@@ -536,11 +537,11 @@ animation: react-rotate 8s linear infinite;
     flex-wrap: wrap;
     align-content: stretch;
     font-weight: 100;
-    width: 100vw;
+    width: 100%;
 }
 
 #the-hook h1 {
-    font-size: 10vmin;
+    font-size: 5rem;
 
 }
 
@@ -553,11 +554,11 @@ animation: react-rotate 8s linear infinite;
 #intro-center {
     background-image:
     linear-gradient(to top,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)),
-    url("background idea.png");
+    url("../img/background_idea.png");
     animation: background-tile 30s linear infinite;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-evenly;
 
     align-items: center;
     flex-wrap: wrap;
@@ -577,20 +578,17 @@ animation: react-rotate 8s linear infinite;
     align-self: center;
     max-width: 100%;
     min-width: 50%;
-    height: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-#diaholder {
-    width: 40vmax;
+    justify-content: flex-start;
+    padding-bottom: 100px;
 }
 
 #short-about {
     background-image:
     linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)),
-    url("background idea.png");
+    url("../img/background_idea.png");
     animation: background-tile 30s linear infinite;
     display: flex;
     flex-direction: row;
@@ -605,7 +603,7 @@ animation: react-rotate 8s linear infinite;
 
 #short-about2 {
     background-image:
-    url("background idea.png");
+    url("../img/background_idea.png");
     animation: background-tile 30s linear infinite;
     display: flex;
     flex-direction: row;
@@ -615,11 +613,11 @@ animation: react-rotate 8s linear infinite;
     flex-wrap: wrap;
     align-content: stretch;
     font-weight: 100;
-    width: 100vw;
+    width: 100%;
 }
 
 .coding-text {
-    max-width: 100vmin;
+    max-width: 540px;
     min-width: 50%;
     display: flex;
     flex-direction: column;
@@ -644,19 +642,6 @@ animation: react-rotate 8s linear infinite;
 
 .coding-text p {
     opacity: 0.4;
-}
-
-@keyframes iconslideshow {
-    0% {
-        opacity: 0;
-        transform: translateY(15vh) rotate(-360deg);
-        -webkit-transform: translateY(15vh) rotate(-360deg);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0vh) rotate(360deg);
-        -webkit-transform: translateY(0vh) rotate(360deg);
-    }
 }
 
 .main-body {
